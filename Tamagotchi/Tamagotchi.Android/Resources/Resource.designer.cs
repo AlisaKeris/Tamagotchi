@@ -11680,7 +11680,7 @@ namespace Tamagotchi.Droid
 			public const int design_snackbar_background = 2131165291;
 			
 			// aapt resource value: 0x7F07006C
-			public const int h = 2131165292;
+			public const int hal = 2131165292;
 			
 			// aapt resource value: 0x7F07006D
 			public const int ic_mtrl_checked_circle = 2131165293;

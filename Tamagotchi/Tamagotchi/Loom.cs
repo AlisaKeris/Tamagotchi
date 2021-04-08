@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 using SQLite;
 
 namespace Tamagotchi
@@ -15,22 +16,25 @@ namespace Tamagotchi
         public int Kullastus { get; set; }
         public int Room { get; set; }
         public int Tervis { get; set; }*/
-        Random random = new Random();
-        int Kullastus = 50;
-        int Room = 50;
-        int Tervis = 50;
+        
+        int Kullastus = 100;
+        int Room = 100;
+        int Tervis = 100;
         //повышаем значения
         public int Nakormit()
         {
             return Kullastus += 10;
+            
         }
         public int Poigrat()
         {
             return Room += 10;
+            
         }
         public int Vulechit()
         {
             return Tervis += 10;
+            
         }
         //godmode
         public void Voskresit()
@@ -39,22 +43,26 @@ namespace Tamagotchi
             Kullastus = 100;
             Room = 100;
         }
-
+        
         public string Checkstate()
         {
-            switch (random.Next(0, 3))
+            Random random = new Random();
+            if (random.Next(0, 2) == 0)
             {
-                case (1):
-                    Tervis -= 10;
-                    break;
-                case (2):
-                    Kullastus -= 10;
-                    break;
-                case (3):
-                    Room -= 10;
-                    break;
+
+                Tervis -= 10;
+
+
             }
-            if (Kullastus == 0 || Room == 0 || Tervis == 0)
+            if (random.Next(0, 2) == 1)
+            {
+                Kullastus -= 10;
+            }
+            if (random.Next(0, 2) == 2)
+            {
+                Room -= 10;
+            }
+            if (Kullastus == 0 ||  Tervis == 0)
             {
                 return "Мертв";
             }

@@ -3,26 +3,28 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:threading="clr-namespace:System.Threading;assembly=mscorlib"
              x:Class="Tamagotchi.MainPage">
 
-    <StackLayout>
-        <Label x:Name="label1" FontSize="30" HorizontalTextAlignment="Center">
+    <StackLayout BackgroundColor="PaleTurquoise">
+        <Label x:Name="label1" FontSize="30" HorizontalTextAlignment="Center" FontFamily="Arial">
         </Label>
-        <Button x:Name="img1">
+        <Button x:Name="img1" BorderWidth="10" BorderColor="Teal">
         </Button>
-        <Button x:Name="button1" Text="Покормить" Clicked="button1_Clicked_1">
+        <Button x:Name="button1" Text="Покормить" Clicked="button1_Clicked_1"  Margin="0,20,0,0" FontFamily="Arial">
         </Button>
-        <ProgressBar x:Name="progressBarkullastus">
+        <ProgressBar x:Name="progressBarkullastus" ProgressColor="Orchid"  >
         </ProgressBar>
-        <Button x:Name="button2" Text="Поиграть" Clicked="button2_Clicked_1">
+        <Button x:Name="button2" Text="Поиграть" Clicked="button2_Clicked_1"   Margin="0,20,0,0" FontFamily="Arial">
         </Button>
-        <ProgressBar x:Name="progressBarroom">
+        <ProgressBar x:Name="progressBarroom" ProgressColor="Orchid">
         </ProgressBar>
-        <Button x:Name="button3" Text="Вылечить" Clicked="button3_Clicked_1">
+        <Button x:Name="button3" Text="Вылечить" Clicked="button3_Clicked_1"  Margin="0,20,0,0" FontFamily="Arial" >
         </Button>
-        <ProgressBar x:Name="progressBartervis">
+        <ProgressBar x:Name="progressBartervis" ProgressColor="Orchid">
         </ProgressBar>
-        <Button x:Name="button5" Text="Воскресить" Clicked="button5_Clicked">
+        <Button x:Name="button5" Text="Воскресить" Clicked="button5_Clicked"  >
         </Button>
-       
+        <Label x:Name="lbl1"  FontSize="20" Margin="10,20,10,10" FontFamily="Arial" >
+        </Label>
+        
     </StackLayout>
 
 </ContentPage>
