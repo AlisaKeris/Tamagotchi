@@ -17,7 +17,7 @@ namespace Tamagotchi
     {
         Stopwatch sWatch;
         ProgressBar progressBartervis, progressBarroom, progressBarkullastus;
-        Label lbl1, lbl2, lbl3, lbl4;
+        Label lbl1;
         Button button1, button2, button3, button5;
         Random rnd = new Random();
 
@@ -166,18 +166,7 @@ namespace Tamagotchi
             progressBarroom.Progress = Pet.Zroom();
             progressBarkullastus.Progress = Pet.Zkullastus();
             pilt();
-            /*StackLayout stack = new StackLayout();
-            stack.Children.Add(label1);
-            stack.Children.Add(img1);
-            stack.Children.Add(button1);
-            stack.Children.Add(progressBarkullastus);
-            stack.Children.Add(button2);
-            stack.Children.Add(progressBarroom);
-            stack.Children.Add(button3);
-            stack.Children.Add(progressBartervis);
-            stack.Children.Add(button5);
-            Content = stack;*/
-
+            
         }
         
         private void button1_Clicked_1(object sender, EventArgs e)

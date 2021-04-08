@@ -36,7 +36,7 @@ namespace Tamagotchi
             return Tervis += 10;
             
         }
-        //godmode
+        
         public void Voskresit()
         {
             Tervis = 100;
