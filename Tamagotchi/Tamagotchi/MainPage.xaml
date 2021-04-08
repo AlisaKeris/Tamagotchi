@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:threading="clr-namespace:System.Threading;assembly=mscorlib"
+             x:Class="Tamagotchi.MainPage">
+
+    <StackLayout>
+        <Label x:Name="label1" FontSize="30" HorizontalTextAlignment="Center">
+        </Label>
+        <Button x:Name="img1">
+        </Button>
+        <Button x:Name="button1" Text="Покормить" Clicked="button1_Clicked_1">
+        </Button>
+        <ProgressBar x:Name="progressBarkullastus">
+        </ProgressBar>
+        <Button x:Name="button2" Text="Поиграть" Clicked="button2_Clicked_1">
+        </Button>
+        <ProgressBar x:Name="progressBarroom">
+        </ProgressBar>
+        <Button x:Name="button3" Text="Вылечить" Clicked="button3_Clicked_1">
+        </Button>
+        <ProgressBar x:Name="progressBartervis">
+        </ProgressBar>
+        <Button x:Name="button5" Text="Воскресить" Clicked="button5_Clicked">
+        </Button>
+       
+    </StackLayout>
+
+</ContentPage>
